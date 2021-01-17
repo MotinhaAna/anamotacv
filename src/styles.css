@@ -1,1 +1,97 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.container{
+    margin-left: 10%;
+    margin-right: 10% ;
+}
+
+.v-padding{
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+
+.alignLeft{
+    float: left;
+}
+
+.hbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /*Align children horizontally*/
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+.vbox {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    /*Align children vetically*/
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+}
+
+/* Solid border */
+hr.solid {
+    border-top: 2px solid #bbb;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.backgroundBlue{
+    background-color: lightskyblue;
+}
+
+.profileheight {
+  height: 60vh;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+img {
+    border-radius: 50%;
+  }
+
+
+@media (max-width:749px){
+    .desktop {
+        display: none;
+    }
+}
+
+@media (min-width:750px){
+    .mobile {
+        display: none;
+    }
+}
+
+.fixed{
+    position: fixed;
+};
