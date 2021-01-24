@@ -14,6 +14,7 @@ import { ExperienceComponent } from './experience/experience.component';
 import { SkillsComponent } from './skills/skills.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { SectionsComponent } from './sections/sections.component';
+import { ContactComponent } from './contact/contact.component';
 
 
 
@@ -28,7 +29,8 @@ import { SectionsComponent } from './sections/sections.component';
     ExperienceComponent,
     SkillsComponent,
     NavigatorComponent,
-    SectionsComponent
+    SectionsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

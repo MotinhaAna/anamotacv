@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-navigator',
@@ -7,9 +9,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavigatorComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: ActivatedRoute) { }
+
+  @ViewChild('about') about;
+  @ViewChild('education') education;
+  @ViewChild('experience') experience;
+  @ViewChild('skills') skills;
 
   ngOnInit(): void {
+  }
+  updateActive(ev: HTMLInputElement) {
+    $('.nav-link').removeClass('active');
+    ev.classList.add('active');
   }
 
 }

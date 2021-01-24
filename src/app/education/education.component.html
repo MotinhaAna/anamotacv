@@ -1,42 +1,19 @@
-<div id="accordion">
-
-    <div class="card">
-        <div class="card-header">
-            <a class="card-link" data-toggle="collapse" href="#collapseOne">
-                Collapsible Group Item #1
-            </a>
-        </div>
-        <div id="collapseOne" class="collapse show" data-parent="#accordion">
-            <div class="card-body">
-                Lorem ipsum..
+<div>
+    <!-- <div *ngFor="let edu of education">
+        <div class="card">
+            <div class="card-header">
+                <a class="card-link " data-toggle="collapse" [attr.href]="'#education' + edu.id">
+                    <div class="hbox">
+                        <p style="width:92%">{{edu.title}}</p>
+                        <p>{{edu.dates}}</p>
+                    </div>
+                </a>
+            </div>
+            <div [attr.id]="'education' + edu.id" class="collapse show" data-parent="#accordion">
+                <div class="card-body">
+                    <p>{{edu.description}}</p>
+                </div>
             </div>
         </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
-                Collapsible Group Item #2
-            </a>
-        </div>
-        <div id="collapseTwo" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-                Lorem ipsum..
-            </div>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="card-header">
-            <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
-                Collapsible Group Item #3
-            </a>
-        </div>
-        <div id="collapseThree" class="collapse" data-parent="#accordion">
-            <div class="card-body">
-                Lorem ipsum..
-            </div>
-        </div>
-    </div>
-
+    </div> -->
 </div>
