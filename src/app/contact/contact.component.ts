@@ -12,8 +12,19 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  oncontact() {
-    console.log("cenas");
+  oncontact(event) {
+    switch (event.target.id) {
+      case "linkedin":
+        window.open('https://www.linkedin.com/in/ana-mota-76990b104', '_blank', 'noopener noreferrer');
+        break;
+
+      case "gmail":
+        window.open("mailto:afamota@gmail.com");
+        break;
+
+      default:
+        break;
+    }
 
   }
 

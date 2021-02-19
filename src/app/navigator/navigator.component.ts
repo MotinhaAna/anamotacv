@@ -11,16 +11,17 @@ export class NavigatorComponent implements OnInit {
 
   constructor(private route: ActivatedRoute) { }
 
-  @ViewChild('about') about;
+  /*@ViewChild('about') about;
   @ViewChild('education') education;
   @ViewChild('experience') experience;
-  @ViewChild('skills') skills;
+  @ViewChild('skills') skills;*/
 
   ngOnInit(): void {
   }
-  updateActive(ev: HTMLInputElement) {
+  updateActive(event) {
+    //currentTarget is where event listener is attached
     $('.nav-link').removeClass('active');
-    ev.classList.add('active');
+    event.target.classList.add('active');
   }
 
 }

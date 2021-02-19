@@ -11,7 +11,7 @@ export class ExperienceComponent implements OnInit {
     {
       "id": "1",
       "title": "Checkmarx \n Application Security Engineer",
-      "dates": "Jul 2019 - Now",
+      "dates": "Jul 2019 - Now",//Jul 2019 - Now
       "description": "- Analysis of applications architecture, technologies and source code for potential security threats. \n - Development of new heuristics to meet the client’s security requirements, also improving the service accuracy, using Checkmarx security tools. \n - Research and POC’s based on vectors of attack and mitigation strategies."
     },
     {

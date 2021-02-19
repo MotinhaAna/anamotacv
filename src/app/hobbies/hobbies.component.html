@@ -1,0 +1,23 @@
+<div class="container ">
+
+    <div class="row" style="row-gap: 10px;">
+
+        <div *ngFor="let hobby of hobbies" class="col-md-3 col-sm-4 col-6 target align-middle text-center">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <div class="icon-box" style="margin: auto">
+                            <div class="icon"><i class="{{hobby.icon}}"></i></div>
+                            <p class="title"><a style="font-size:2vh" href="">{{hobby.name}}</a></p>
+                        </div>
+                    </div>
+                    <div class="flip-card-back">
+                        <div class="icon-box " style="margin: auto">
+                            <p class="title" style="font-size:1.2vh; padding-top: inherit; ">{{hobby.desc}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

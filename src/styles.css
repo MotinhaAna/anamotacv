@@ -9,7 +9,8 @@ html, body { height: 100%; }
 body {
     background-color: #000000;
     margin: 0; 
-    font-family: Roboto, "Helvetica Neue", sans-serif;
+    /*font-family: Roboto, "Helvetica Neue", sans-serif;*/
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .navbar-nav.navbar-center {
@@ -88,13 +89,26 @@ body {
 @media (max-width:749px){
     .desktop {
         display: none;
-    }
+    }   
 }
 
 @media (min-width:750px){
     .mobile {
         display: none;
     }
+}
+
+@media (max-width:599px){
+  .skill-font{
+    font-size: 2.8vw;
+  }
+  
+}
+
+@media (min-width:600px){
+  .skill-font{
+    font-size: 2vh;
+  }
 }
 
 .fixed{
@@ -206,6 +220,11 @@ body {
   
   /* Media queries - Responsive timeline on screens less than 600px wide */
   @media screen and (max-width: 600px) {
+
+    .timecontainer::after{
+      display: none;
+    }
+
   /* Place the timelime to the left */
     .timeline::after {
       left: 31px;
@@ -241,4 +260,157 @@ body {
     white-space: pre-line;
 }
 
-  
+
+.icon-box {
+  height: 15vh;
+  width: 15vh;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+ .icon-box::before {
+  content: '';
+  position: absolute;
+  background: #cbe0fb;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  top: 100%;
+  transition: all 0.3s;
+  z-index: -1;
+}
+/*
+.icon-box:hover::before {
+  background: #fca903;
+  top: 0;
+  border-radius: 0px;
+} */
+
+.icon{
+  margin: 1vh;
+}
+
+/* .icon-box .icon .fas {
+  font-size: 30px;
+} */
+
+
+
+.typewriter h1{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.5vw solid #fca903; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0; /* Adjust as needed */
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .50s infinite normal;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #fca903; }
+}
+
+
+.progress-value {
+  animation: load 3s normal forwards;
+  box-shadow: 0 10px 40px -10px #fff;
+  height: 30px;
+  width: 0;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  /*100% { width: 100%; }*/
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -1px) rotate(-5deg); }
+  20% { transform: translate(-3px, 0px) rotate(5deg); }
+  30% { transform: translate(1px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(5deg); }
+  50% { transform: translate(-1px, 1px) rotate(-5deg); }
+  60% { transform: translate(-1px, 1px) rotate(0deg); }
+  70% { transform: translate(1px, 1px) rotate(-5deg); }
+  80% { transform: translate(-1px, -1px) rotate(5deg); }
+  90% { transform: translate(1px, 1px) rotate(0deg); }
+  100% { transform: translate(1px, -1px) rotate(-5deg); }
+}
+
+.shaking{
+  animation: shake 1s ;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.profile{
+width: 100%;
+height: 75vh;
+background: url("assets/images/agile.png") top left;
+background-size: cover;
+position: relative;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px; 
+} 
+
+/* This container is needed to position the front and back side */
+ .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+} 
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+} 
+
+/* Style the back side */
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.language-phrase{
+  font-size: 2vh; 
+  color: #FFFFFF
+}
+.language-phrase span{
+  color: #fca903
+}
+
+.language-phrase small{
+  color: #6c757d
+}

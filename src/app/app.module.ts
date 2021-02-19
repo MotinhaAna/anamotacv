@@ -15,6 +15,10 @@ import { SkillsComponent } from './skills/skills.component';
 import { NavigatorComponent } from './navigator/navigator.component';
 import { SectionsComponent } from './sections/sections.component';
 import { ContactComponent } from './contact/contact.component';
+import { LanguagesComponent } from './languages/languages.component';
+import { StrengthsComponent } from './strengths/strengths.component';
+import { SelfTaughtComponent } from './self-taught/self-taught.component';
+import { HobbiesComponent } from './hobbies/hobbies.component';
 
 
 
@@ -30,7 +34,11 @@ import { ContactComponent } from './contact/contact.component';
     SkillsComponent,
     NavigatorComponent,
     SectionsComponent,
-    ContactComponent
+    ContactComponent,
+    LanguagesComponent,
+    StrengthsComponent,
+    SelfTaughtComponent,
+    HobbiesComponent
   ],
   imports: [
     BrowserModule,

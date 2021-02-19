@@ -39,7 +39,7 @@
 
 <!-- Links -->
 
-<nav class="navbar navbar-expand-sm navbar-dark " style="background-color: #000000">
+<nav class="navbar navbar-expand-sm navbar-dark">
 
     <button class="d-lg-none navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,21 +47,21 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <!-- Links -->
-        <ul class="navbar-nav navbar-center">
+        <ul class="navbar-nav navbar-center" (click)="updateActive($event)">
             <li class="nav-item">
-                <a class="nav-link active" href="#about" #about (click)="updateActive(about)">About me</a>
+                <a class="nav-link active" href="#about">About me</a>
             </li>
             <!-- <li class="nav-item">
-                <a class="nav-link " href="#education" #education (click)="updateActive(education)">Education</a>
+                <a class="nav-link " href="#education">Education</a>
             </li> -->
             <li class="nav-item">
-                <a class="nav-link " href="#skills" #skills (click)="updateActive(skills)">Skills</a>
+                <a class="nav-link " href="#skills">Skills</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#experience" #experience (click)="updateActive(experience)">Experience</a>
+                <a class="nav-link " href="#experience">Experience</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#contact" #contact (click)="updateActive(contact)"></a>
+                <a class="nav-link " href="#contact"></a>
             </li>
         </ul>
     </div>
