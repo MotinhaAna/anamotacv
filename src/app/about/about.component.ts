@@ -14,9 +14,9 @@ export class AboutComponent implements OnInit {
 
   name = "ANA MOTA";
   title = "Software and Security Enginner."
-  interests = "Interests: Technology, Software, Web security, Javascript";
+  interests = "Interests: Technology, Software, CyberSecurity, Javascript";
   //aboutme = "A Javascript lover, looking for the opportunity to become a Full-stack Developer. Captivated by technology evolution, a believer of automation technologies is looking for the next challenge in the Tech field.";
-  aboutme = "Focused on writing code securely, I'm looking for the next challenge in the Tech field. Passioned about technology and people, I'm going to deliver to the highest standards.";
+  aboutme = "I am a Javascript lover, focused on writing secure code and dedicated in deliver high quality code. Passioned about technology and people, I will bring motivation to the team.";
 
   ngOnInit(): void {
   }
