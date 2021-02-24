@@ -13,7 +13,7 @@ export class SkillsComponent implements OnInit {
     {
       "name": "SAPUI5, FIORI",
       "img": '../assets/images/sapui5.png',
-      "value": 75
+      "value": 90
     },
     {
       "name": "SQL, SAP HANA",
@@ -43,7 +43,7 @@ export class SkillsComponent implements OnInit {
     {
       "name": "NODE, MONGODB",
       "img": '../assets/images/node.png',
-      "value": 30
+      "value": 40
     },
     {
       "name": "GIT",
