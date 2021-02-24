@@ -33,7 +33,7 @@ export class HobbiesComponent implements OnInit {
       "id": "1",
       "icon": "fas fa-book",
       "name": "Reading",
-      "desc": "Brain food, what else?"
+      "desc": "Favourite Book: Sapiens, Yuval Harari"
     }
   ]
 

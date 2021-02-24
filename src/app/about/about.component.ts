@@ -13,9 +13,10 @@ export class AboutComponent implements OnInit {
   itemImageUrl = '../assets/images/avatar_am.png';
 
   name = "ANA MOTA";
-  title = "Software and  Security Enginner."
+  title = "Software and Security Enginner."
   interests = "Interests: Technology, Software, Web security, Javascript";
-  aboutme = "A Javascript lover, looking for the opportunity to become a Full-stack Developer. Captivated by technology evolution, a believer of automation technologies is looking for the next challenge in the Tech field.";
+  //aboutme = "A Javascript lover, looking for the opportunity to become a Full-stack Developer. Captivated by technology evolution, a believer of automation technologies is looking for the next challenge in the Tech field.";
+  aboutme = "Focused on writing code securely, I'm looking for the next challenge in the Tech field. Passioned about technology and people, I'm going to deliver to the highest standards.";
 
   ngOnInit(): void {
   }
