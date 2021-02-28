@@ -103,9 +103,9 @@ body {
     font-size: 2.8vw;
   }
   .margin-for-header{
-    padding-top:8vw;
+    padding-top:15vw;
   }
-  
+
 }
 
 @media (min-width:600px){
@@ -118,6 +118,11 @@ body {
   .skill-font{
     font-size: 2.8vw;
   }
+
+  .fixed-mobile{
+    z-index:1000; 
+    position:absolute;
+  }
 }
 
 @media (min-width:500px){
@@ -126,7 +131,7 @@ body {
   }
 
   .margin-for-header{
-    padding-top:22vh;
+    padding-top:25vh;
   }
 }
 
