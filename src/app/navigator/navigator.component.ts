@@ -17,11 +17,11 @@ export class NavigatorComponent implements OnInit {
   @ViewChild('skills') skills;*/
 
   ngOnInit(): void {
+
+    /* $(".navbar").on("activate.bs.scrollspy", function () {
+      console.log("cenas");
+    }) */
   }
-  updateActive(event) {
-    //currentTarget is where event listener is attached
-    $('.nav-link').removeClass('active');
-    event.target.classList.add('active');
-  }
+
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
 
 @Component({
   selector: 'app-skills',
@@ -53,6 +54,14 @@ export class SkillsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+    /* var firstScrollSpyEl = document.querySelector('[data-spy="scroll"]')
+    firstScrollSpyEl.addEventListener('activate.bs.scrollspy', function () {
+      console.log("cenas");
+    }) */
+
+
   }
 
 }
