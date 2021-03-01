@@ -80,10 +80,10 @@ body {
   display: flex;
   /* flex-direction: column; */
   text-align: center;
-    /* margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 
@@ -338,7 +338,8 @@ body {
     letter-spacing: 0; /* Adjust as needed */
     animation: 
       typing 2.5s steps(40, end),
-      blink-caret .50s infinite normal;
+      /* blink-caret .50s infinite normal; */
+      blink-caret .75s step-end infinite;
   }  
 } 
 
