@@ -4,7 +4,9 @@
 
 /*General*/
 
-html, body { height: 100%; }
+html, body { height: 100%; width: 100%;} 
+
+
 /* Set a background color */
 body {
     background-color: #000000;
